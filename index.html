@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNSC Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>DNSC Lost & Found</h1>
+        <p>Report and find lost belongings on campus.</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+            <h2>Add Report</h2>
+
+            <form id="reportForm">
+
+                <label for="itemName">Item Name</label>
+                <input
+                    type="text"
+                    id="itemName"
+                    placeholder="Example: Black Wallet"
+                >
+
+                <label for="reportType">Report Type</label>
+                <select id="reportType">
+                    <option value="">Select type</option>
+                    <option value="Lost">Lost</option>
+                    <option value="Found">Found</option>
+                </select>
+
+                <label for="location">Location</label>
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: Library"
+                >
+
+                <label for="description">Description</label>
+                <textarea
+                    id="description"
+                    placeholder="Describe the item..."
+                ></textarea>
+
+                <button type="submit">Add Report</button>
+
+                <p id="message" class="message"></p>
+
+            </form>
+        </section>
+
+
+        <section class="reports-section">
+
+            <h2>Reports</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search reports..."
+            >
+
+            <div id="reportsContainer"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
